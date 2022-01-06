@@ -1,0 +1,22 @@
+global function RiffBoostInit
+#if SERVER
+#endif
+
+
+void function RiffBoostInit()
+{
+
+	
+
+	AddPrivateMatchModeSettingEnum( "#MODE_SETTING_CATEGORY_RIFF", "EdgeBoost", [ "#SETTING_DISABLED", "#SETTING_ENABLED" ], "0" )
+
+    #if SERVER
+	if ( GetCurrentPlaylistVarInt( "EdgeBoost", 0 ) == 0 )
+		return
+	ServerCommand("slide_step_velocity_reduction -125")
+	
+	#endif
+
+
+}
+

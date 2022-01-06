@@ -1,0 +1,21 @@
+{
+	"Name" : "Edge Boost Riff",
+	"Description" : "Makes sliding into a small edge like a stair rapidly increase your speed.  Best used with high air acceleration as it can be hard to control otherwise",
+	"Version": "1.0.0",
+	"LoadPriority": 1,
+
+    "Scripts": [
+        {
+            "Path": "gamemodes/sh_riff_EdgeBoost.gnut",
+        "RunOn": "( CLIENT || SERVER ) && MP",
+        "ClientCallback": {
+            "After": "RiffBoostInit"
+        },
+        
+        "ServerCallback": {
+            "After": "RiffBoostInit"
+            }
+        },
+    ]
+}
+
