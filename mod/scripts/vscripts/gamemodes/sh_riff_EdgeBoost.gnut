@@ -13,7 +13,7 @@ void function RiffBoostInit()
     #if SERVER
 	if ( GetCurrentPlaylistVarInt( "EdgeBoost", 0 ) == 0 )
 		return
-	ServerCommand("slide_step_velocity_reduction -125")
+	ServerCommand("slide_step_velocity_reduction -45")
 	
 	#endif
 
