@@ -3,7 +3,7 @@ TF|2 mod that implements a new movement mechanic which allows for rapid accelera
 
 # Features
 - Even faster movement
-- Best experience with high air acceleration 
+- Best experienced with high air acceleration 
 
 # Showcase Video
 https://youtu.be/G-S7k37bvTI
